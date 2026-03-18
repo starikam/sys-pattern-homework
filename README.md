@@ -20,7 +20,7 @@
 
 ### Задание 1
 
-Написал такой конфиг:
+Написал такой конфиг (взял за основу example):
 
 ```
 global
@@ -73,7 +73,8 @@ listen stats
 
 ### Задание 2
 
-Такой конфиг
+Такой конфиг:
+
 ```
 global
     log /dev/log local0
@@ -114,5 +115,19 @@ listen stats
     stats admin if TRUE
 
 ```
+
+Сервера запущены:
+
+<img width="807" height="138" alt="2026-03-18_21-03-45" src="https://github.com/user-attachments/assets/7c9bd501-093e-4d25-95f6-41edf2c31173" />
+
+Балансировка при запросе example.local:
+
+<img width="1475" height="602" alt="2026-03-18_21-03-25" src="https://github.com/user-attachments/assets/7e84d68a-51fb-4ae2-96d5-f82ad5515c7a" />
+
+Другой домен отдает 503:
+
+<img width="989" height="676" alt="2026-03-18_21-22-21" src="https://github.com/user-attachments/assets/17cc0c09-7500-4cb8-87af-a2411403546e" />
+
+
 
 
